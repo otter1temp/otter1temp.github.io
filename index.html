@@ -1,0 +1,1392 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>人人久精品宗合_人人久精品宗合使用指南_人人久精品宗合内容社区</title>
+<meta name="description" content="人人久精品宗合官方网站，深耕原创视频内容生态，汇聚高清精品内容与专业创作者，打造值得信赖的综合视频品牌平台。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232c3e50'/%3E%3Cpath d='M22 18l24 14-24 14z' fill='%23f5b73d'/%3E%3C/svg%3E">
+<style>
+:root{
+  --rj-ink:#1f2733;
+  --rj-ink-soft:#48566b;
+  --rj-paper:#f6f7f9;
+  --rj-card:#ffffff;
+  --rj-line:#e2e6ec;
+  --rj-blue:#2c3e50;
+  --rj-blue-deep:#1b2735;
+  --rj-gold:#e0a13a;
+  --rj-gold-soft:#fdf3e0;
+  --rj-teal:#2f7f7a;
+  --rj-teal-soft:#e8f3f2;
+  --rj-shadow:0 8px 24px rgba(31,39,51,.08);
+  --rj-radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  color:var(--rj-ink);
+  background:var(--rj-paper);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+.rj-shell{width:min(1180px,calc(100% - 40px));margin:0 auto}
+.rj-anchor{scroll-margin-top:130px}
+
+/* 吸顶公告条 + 页头 */
+.rj-sticky-wrap{position:sticky;top:0;z-index:80}
+.rj-notice{
+  background:linear-gradient(90deg,#1b2735,#2c3e50 55%,#34506b);
+  color:#f3f6fa;
+  font-size:13.5px;
+}
+.rj-notice-inner{
+  display:flex;align-items:center;gap:14px;
+  padding:8px 0;
+  overflow:hidden;
+}
+.rj-notice-badge{
+  flex:none;background:var(--rj-gold);color:#28313d;
+  font-weight:700;font-size:12px;letter-spacing:.5px;
+  padding:2px 9px;border-radius:20px;
+}
+.rj-notice-text{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rj-notice-text b{color:#ffd489;font-weight:700}
+.rj-notice-close{
+  flex:none;background:transparent;border:1px solid rgba(255,255,255,.35);
+  color:#dfe7f0;border-radius:20px;font-size:12px;padding:1px 10px;
+}
+.rj-notice-close:hover{background:rgba(255,255,255,.12)}
+
+.rj-header{
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--rj-line);
+  box-shadow:0 2px 12px rgba(31,39,51,.05);
+}
+.rj-header-inner{
+  display:flex;align-items:center;gap:20px;
+  padding:12px 0;
+}
+.rj-logo{display:flex;align-items:center;gap:10px;flex:none}
+.rj-logo-mark{
+  width:40px;height:40px;border-radius:11px;
+  background:linear-gradient(140deg,#2c3e50,#436b8c);
+  display:grid;place-items:center;
+}
+.rj-logo-mark svg{width:20px;height:20px}
+.rj-logo-text{display:flex;flex-direction:column;line-height:1.2}
+.rj-logo-name{font-size:18px;font-weight:800;letter-spacing:.5px}
+.rj-logo-sub{font-size:11px;color:var(--rj-ink-soft);letter-spacing:2px}
+
+.rj-nav{display:flex;align-items:center;gap:4px;margin-left:8px}
+.rj-nav a{
+  font-size:14.5px;color:var(--rj-ink-soft);
+  padding:7px 11px;border-radius:8px;white-space:nowrap;
+  transition:background .18s,color .18s;
+}
+.rj-nav a:hover,.rj-nav a:focus-visible{background:var(--rj-teal-soft);color:var(--rj-teal);outline:none}
+
+.rj-header-tools{display:flex;align-items:center;gap:10px;margin-left:auto}
+.rj-search{
+  position:relative;display:flex;align-items:center;
+  background:#eef1f5;border-radius:22px;padding:0 10px 0 14px;
+  border:1px solid transparent;transition:border .18s,background .18s;
+}
+.rj-search:focus-within{background:#fff;border-color:var(--rj-teal)}
+.rj-search input{
+  border:0;background:transparent;outline:none;
+  font-size:14px;padding:8px 0;width:168px;color:var(--rj-ink);
+}
+.rj-search button{
+  border:0;background:var(--rj-blue);color:#fff;border-radius:50%;
+  width:28px;height:28px;display:grid;place-items:center;flex:none;
+}
+.rj-search button svg{width:14px;height:14px}
+.rj-search-tip{
+  position:absolute;top:calc(100% + 8px);left:0;right:0;
+  background:#fff;border:1px solid var(--rj-line);border-radius:10px;
+  box-shadow:var(--rj-shadow);font-size:13px;color:var(--rj-ink-soft);
+  padding:10px 12px;display:none;z-index:40;
+}
+.rj-search-tip.is-open{display:block}
+.rj-menu-btn{
+  display:none;border:1px solid var(--rj-line);background:#fff;
+  border-radius:10px;width:40px;height:40px;place-items:center;margin-left:auto;
+}
+.rj-menu-btn svg{width:20px;height:20px}
+
+/* 首屏 */
+.rj-hero{
+  position:relative;
+  padding:44px 0 36px;
+  background:
+    radial-gradient(900px 380px at 88% -10%,rgba(224,161,58,.16),transparent 60%),
+    radial-gradient(700px 320px at -5% 40%,rgba(47,127,122,.13),transparent 62%),
+    #fbfbfc;
+  border-bottom:1px solid var(--rj-line);
+}
+.rj-hero-grid{display:grid;grid-template-columns:6fr 4fr;gap:44px;align-items:center}
+.rj-hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;border:1px solid var(--rj-line);border-radius:30px;
+  padding:4px 14px;font-size:13px;color:var(--rj-teal);font-weight:600;
+  box-shadow:0 2px 10px rgba(47,127,122,.08);
+}
+.rj-hero-kicker i{width:7px;height:7px;border-radius:50%;background:var(--rj-teal);display:block}
+.rj-hero h1{
+  font-size:clamp(30px,4vw,46px);
+  letter-spacing:-.5px;margin:16px 0 14px;
+  color:var(--rj-blue-deep);
+}
+.rj-hero h1 em{font-style:normal;color:var(--rj-gold);position:relative}
+.rj-hero h1 em::after{
+  content:"";position:absolute;left:0;right:0;bottom:-4px;height:7px;
+  background:rgba(224,161,58,.22);border-radius:4px;
+}
+.rj-hero-lead{font-size:16.5px;color:var(--rj-ink-soft);max-width:56ch}
+.rj-hero-desc{
+  margin-top:14px;font-size:14.5px;color:var(--rj-ink-soft);
+  background:#fff;border-left:3px solid var(--rj-gold);
+  padding:12px 16px;border-radius:0 10px 10px 0;
+  box-shadow:0 2px 10px rgba(31,39,51,.04);
+}
+.rj-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.rj-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  border-radius:10px;padding:11px 22px;font-size:15px;font-weight:600;
+  border:1px solid transparent;transition:transform .16s,box-shadow .16s,background .16s;
+}
+.rj-btn:hover{transform:translateY(-2px)}
+.rj-btn-primary{background:var(--rj-blue);color:#fff;box-shadow:0 6px 18px rgba(44,62,80,.24)}
+.rj-btn-primary:hover{background:#243647}
+.rj-btn-gold{background:var(--rj-gold);color:#2b2415;box-shadow:0 6px 18px rgba(224,161,58,.3)}
+.rj-btn-ghost{background:#fff;border-color:var(--rj-line);color:var(--rj-ink)}
+.rj-btn-ghost:hover{border-color:var(--rj-teal);color:var(--rj-teal)}
+.rj-btn svg{width:16px;height:16px}
+
+.rj-hero-stats{display:flex;flex-wrap:wrap;gap:26px;margin-top:28px}
+.rj-stat{min-width:96px}
+.rj-stat-num{font-size:25px;font-weight:800;color:var(--rj-blue-deep);letter-spacing:-.5px}
+.rj-stat-num small{font-size:13px;font-weight:600;color:var(--rj-ink-soft);margin-left:2px}
+.rj-stat-label{font-size:12.5px;color:var(--rj-ink-soft)}
+
+.rj-hero-visual{position:relative}
+.rj-hero-frame{
+  border-radius:20px;overflow:hidden;background:#1b2735;
+  box-shadow:0 18px 46px rgba(27,39,53,.26);
+  position:relative;
+}
+.rj-hero-frame img{width:100%;height:auto;aspect-ratio:4/3.4;object-fit:cover}
+.rj-hero-play{
+  position:absolute;inset:auto 16px 16px 16px;
+  display:flex;align-items:center;gap:12px;
+  background:rgba(255,255,255,.94);border-radius:12px;padding:10px 14px;
+  backdrop-filter:blur(4px);
+}
+.rj-hero-play i{
+  flex:none;width:36px;height:36px;border-radius:50%;background:var(--rj-gold);
+  display:grid;place-items:center;
+}
+.rj-hero-play i svg{width:14px;height:14px;fill:#2b2415;margin-left:2px}
+.rj-hero-play b{display:block;font-size:13.5px}
+.rj-hero-play span{display:block;font-size:12px;color:var(--rj-ink-soft)}
+.rj-hero-tag{
+  position:absolute;top:-12px;right:14px;
+  background:#fff;border:1px solid var(--rj-line);border-radius:30px;
+  font-size:12.5px;font-weight:700;color:var(--rj-blue);
+  padding:4px 13px;box-shadow:var(--rj-shadow);
+}
+
+/* 通用 section */
+.rj-section{padding:52px 0}
+.rj-section-alt{background:#fff;border-top:1px solid var(--rj-line);border-bottom:1px solid var(--rj-line)}
+.rj-sec-head{display:flex;flex-wrap:wrap;align-items:flex-end;gap:14px;margin-bottom:26px}
+.rj-sec-head h2{
+  font-size:clamp(22px,2.6vw,29px);color:var(--rj-blue-deep);letter-spacing:-.3px;
+}
+.rj-sec-head h2 span{color:var(--rj-teal)}
+.rj-sec-sub{font-size:14px;color:var(--rj-ink-soft);max-width:62ch;padding-bottom:3px}
+.rj-sec-more{margin-left:auto;font-size:13.5px;color:var(--rj-teal);font-weight:600;white-space:nowrap;padding-bottom:4px}
+.rj-sec-more:hover{text-decoration:underline}
+.rj-eyebrow{
+  display:inline-block;font-size:12px;letter-spacing:2.5px;
+  color:var(--rj-gold);font-weight:700;margin-bottom:8px;
+}
+
+/* 焦点 + 视频列表 */
+.rj-focus-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:26px;align-items:start}
+.rj-card{
+  background:var(--rj-card);border:1px solid var(--rj-line);border-radius:var(--rj-radius);
+  box-shadow:0 3px 12px rgba(31,39,51,.045);
+  transition:transform .18s,box-shadow .18s,border-color .18s;
+}
+.rj-card:hover{transform:translateY(-3px);box-shadow:var(--rj-shadow);border-color:#cfd8e3}
+.rj-focus-card{overflow:hidden}
+.rj-focus-card .rj-media{position:relative;background:#dfe5ec}
+.rj-focus-card .rj-media img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.rj-media-label{
+  position:absolute;left:12px;top:12px;background:rgba(27,39,53,.82);color:#fff;
+  font-size:12px;padding:3px 10px;border-radius:20px;letter-spacing:.5px;
+}
+.rj-focus-body{padding:18px 20px 20px}
+.rj-focus-body h3{font-size:20px;margin-bottom:8px}
+.rj-focus-body p{font-size:14px;color:var(--rj-ink-soft)}
+.rj-meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:12px;font-size:12.5px;color:var(--rj-ink-soft)}
+.rj-tag{
+  background:var(--rj-teal-soft);color:var(--rj-teal);
+  font-size:12px;font-weight:600;padding:2px 9px;border-radius:20px;
+}
+.rj-tag-gold{background:var(--rj-gold-soft);color:#a8712b}
+.rj-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;padding-top:13px;border-top:1px dashed var(--rj-line)}
+.rj-actions button{
+  display:inline-flex;align-items:center;gap:6px;
+  background:#f3f5f8;border:1px solid transparent;border-radius:20px;
+  padding:5px 13px;font-size:13px;color:var(--rj-ink-soft);
+  transition:background .16s,color .16s,border-color .16s;
+}
+.rj-actions button:hover{background:#e9eef4;color:var(--rj-blue)}
+.rj-actions button.is-liked{background:#fdeaea;color:#c2453f;border-color:#f6cfcd}
+.rj-actions button.is-saved{background:var(--rj-gold-soft);color:#a8712b;border-color:#f0d9ad}
+.rj-actions button svg{width:14px;height:14px}
+
+.rj-vlist{display:flex;flex-direction:column;gap:12px}
+.rj-vitem{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;
+  padding:15px 18px;background:#fff;border:1px solid var(--rj-line);
+  border-radius:12px;transition:border-color .16s,box-shadow .16s,transform .16s;
+}
+.rj-vitem:hover{border-color:#cfd8e3;box-shadow:var(--rj-shadow);transform:translateX(3px)}
+.rj-vitem h3{font-size:15.5px;margin-bottom:5px}
+.rj-vitem h3 a:hover{color:var(--rj-teal)}
+.rj-vitem p{font-size:13px;color:var(--rj-ink-soft);display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.rj-vitem-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;font-size:12px;color:#7b8797}
+.rj-vstat{flex:none;text-align:right;font-size:12px;color:#7b8797;line-height:1.9}
+.rj-vstat b{display:block;font-size:15px;color:var(--rj-blue);font-weight:800}
+.rj-mini-btn{
+  border:0;background:transparent;padding:0;font-size:12px;color:var(--rj-teal);font-weight:600;
+}
+.rj-mini-btn:hover{text-decoration:underline}
+
+/* 三列专题 */
+.rj-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.rj-topic{padding:20px;display:flex;flex-direction:column;gap:12px}
+.rj-topic-head{display:flex;align-items:flex-start;gap:10px}
+.rj-topic-ico{
+  flex:none;width:38px;height:38px;border-radius:10px;
+  display:grid;place-items:center;background:var(--rj-teal-soft);color:var(--rj-teal);
+  font-weight:800;font-size:15px;
+}
+.rj-topic h3{font-size:17px}
+.rj-topic .rj-sub{font-size:12.5px;color:#7b8797;margin-top:2px}
+.rj-topic p{font-size:13.5px;color:var(--rj-ink-soft)}
+.rj-topic-list{display:flex;flex-direction:column;gap:8px;margin-top:auto}
+.rj-topic-list li{
+  font-size:13px;color:var(--rj-ink-soft);
+  padding-left:15px;position:relative;
+  display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;
+}
+.rj-topic-list li::before{
+  content:"";position:absolute;left:0;top:9px;width:6px;height:6px;
+  border-radius:50%;background:var(--rj-gold);
+}
+.rj-status{
+  font-size:11.5px;font-weight:700;letter-spacing:.4px;padding:2px 9px;border-radius:20px;
+  background:var(--rj-gold-soft);color:#a8712b;align-self:flex-start;
+}
+.rj-status-done{background:#e9f0f8;color:#3a5f8a}
+
+/* 关键词解析 */
+.rj-explain{
+  background:#fff;border:1px solid var(--rj-line);border-radius:var(--rj-radius);
+  padding:32px clamp(20px,3vw,42px);
+}
+.rj-explain h2{font-size:clamp(22px,2.6vw,28px);margin-bottom:8px}
+.rj-explain .rj-explain-lead{font-size:14.5px;color:var(--rj-ink-soft);margin-bottom:22px}
+.rj-explain h3{
+  font-size:17px;margin:26px 0 10px;padding-left:12px;
+  border-left:3px solid var(--rj-gold);color:var(--rj-blue-deep);
+}
+.rj-explain p{font-size:14.8px;color:#3d4a5c;margin-bottom:12px}
+.rj-explain strong{color:var(--rj-blue);font-weight:700}
+.rj-explain-table{
+  width:100%;border-collapse:collapse;margin:16px 0 6px;font-size:13.5px;
+  border:1px solid var(--rj-line);border-radius:10px;overflow:hidden;
+}
+.rj-explain-table th,.rj-explain-table td{
+  border-bottom:1px solid var(--rj-line);padding:9px 12px;text-align:left;vertical-align:top;
+}
+.rj-explain-table th{background:#f2f6f9;color:var(--rj-blue);font-weight:700;white-space:nowrap}
+.rj-explain-table tr:last-child td{border-bottom:0}
+.rj-quote{
+  background:var(--rj-gold-soft);border-radius:10px;padding:14px 18px;
+  font-size:13.8px;color:#7d5a20;margin:16px 0;
+}
+
+/* 创作者 */
+.rj-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.rj-author{padding:20px;display:flex;gap:16px;align-items:flex-start}
+.rj-avatar{
+  flex:none;width:58px;height:58px;border-radius:16px;
+  display:grid;place-items:center;font-size:21px;font-weight:800;color:#fff;
+}
+.rj-avatar-1{background:linear-gradient(140deg,#3f6d8e,#2c3e50)}
+.rj-avatar-2{background:linear-gradient(140deg,#e0a13a,#c07f22);color:#2b2415}
+.rj-avatar-3{background:linear-gradient(140deg,#2f7f7a,#256b67)}
+.rj-avatar-4{background:linear-gradient(140deg,#8a6a9c,#6a4e7b)}
+.rj-avatar-5{background:linear-gradient(140deg,#b4574f,#8d3a34)}
+.rj-avatar-6{background:linear-gradient(140deg,#4d7a52,#356038)}
+.rj-author-main{min-width:0;flex:1}
+.rj-author-name{font-size:16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.rj-author-name small{font-size:11.5px;font-weight:600;color:var(--rj-teal);background:var(--rj-teal-soft);padding:1px 8px;border-radius:20px}
+.rj-author-fields{font-size:12.5px;color:#7b8797;margin:3px 0 8px}
+.rj-author p{font-size:13.2px;color:var(--rj-ink-soft)}
+.rj-author-foot{display:flex;flex-wrap:wrap;gap:14px;margin-top:10px;font-size:12px;color:#7b8797}
+.rj-author-foot b{color:var(--rj-blue);font-weight:700}
+.rj-link-btn{
+  border:0;background:transparent;color:var(--rj-teal);font-size:12.5px;font-weight:700;padding:0;
+}
+.rj-link-btn:hover{text-decoration:underline}
+
+/* 数据榜单 */
+.rj-board-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.rj-board{padding:18px 20px}
+.rj-board h3{font-size:16px;display:flex;align-items:center;gap:8px;margin-bottom:14px}
+.rj-board h3 span{
+  width:24px;height:24px;border-radius:7px;display:grid;place-items:center;
+  font-size:12.5px;background:var(--rj-blue);color:#fff;
+}
+.rj-rank-list{display:flex;flex-direction:column;gap:10px}
+.rj-rank{display:flex;gap:12px;align-items:flex-start;font-size:13.4px}
+.rj-rank-no{
+  flex:none;width:22px;height:22px;border-radius:6px;display:grid;place-items:center;
+  font-size:12px;font-weight:800;background:#eef1f5;color:#6b7889;
+}
+.rj-rank:nth-child(1) .rj-rank-no{background:#f6e1b8;color:#8a5c14}
+.rj-rank:nth-child(2) .rj-rank-no{background:#e5eaf0;color:#526072}
+.rj-rank:nth-child(3) .rj-rank-no{background:#f4dfd1;color:#96502c}
+.rj-rank-main{min-width:0}
+.rj-rank-main b{font-weight:600;display:block;line-height:1.5}
+.rj-rank-main span{font-size:11.8px;color:#8a95a4}
+.rj-rank-val{margin-left:auto;flex:none;font-size:12px;color:var(--rj-teal);font-weight:700}
+
+/* 评价 */
+.rj-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.rj-review{padding:18px 20px;display:flex;flex-direction:column;gap:10px}
+.rj-review-top{display:flex;align-items:center;gap:10px}
+.rj-review-av{
+  flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+  font-size:13px;font-weight:800;color:#fff;background:#3f6d8e;
+}
+.rj-review-top b{font-size:14px}
+.rj-review-top span{font-size:11.5px;color:#8a95a4;margin-left:auto}
+.rj-review p{font-size:13.5px;color:var(--rj-ink-soft)}
+.rj-review .rj-stars{color:var(--rj-gold);font-size:13px;letter-spacing:1px}
+.rj-review-quote{border-left:3px solid var(--rj-teal);padding-left:14px;background:#fafcfc;border-radius:0 8px 8px 0}
+
+/* 动态 + 合作 + FAQ */
+.rj-split{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:26px;align-items:start}
+.rj-member-timeline{display:flex;flex-direction:column;gap:14px}
+.rj-news{display:flex;gap:14px;padding:14px 16px;background:#fff;border:1px solid var(--rj-line);border-radius:12px}
+.rj-news time{flex:none;font-size:12px;color:#8a95a4;width:66px;padding-top:2px}
+.rj-news b{display:block;font-size:14.5px;margin-bottom:3px}
+.rj-news p{font-size:13px;color:var(--rj-ink-soft)}
+
+.rj-partner-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.rj-partner{
+  padding:16px;text-align:center;background:#fff;border:1px solid var(--rj-line);
+  border-radius:12px;transition:border-color .16s,box-shadow .16s;
+}
+.rj-partner:hover{border-color:var(--rj-teal);box-shadow:var(--rj-shadow)}
+.rj-partner b{display:block;font-size:14.5px;color:var(--rj-blue)}
+.rj-partner span{font-size:12px;color:#8a95a4}
+
+.rj-faq{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.rj-faq details{
+  background:#fff;border:1px solid var(--rj-line);border-radius:10px;
+  padding:0 16px;transition:border-color .16s;
+}
+.rj-faq details[open]{border-color:var(--rj-teal);background:#fcfefe}
+.rj-faq summary{
+  cursor:pointer;list-style:none;font-size:14.5px;font-weight:600;
+  padding:13px 24px 13px 0;position:relative;color:var(--rj-blue-deep);
+}
+.rj-faq summary::-webkit-details-marker{display:none}
+.rj-faq summary::after{
+  content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);
+  font-size:18px;color:var(--rj-teal);font-weight:400;transition:transform .18s;
+}
+.rj-faq details[open] summary::after{content:"−"}
+.rj-faq p{font-size:13.5px;color:var(--rj-ink-soft);padding:0 0 14px}
+
+/* 投稿区 */
+.rj-cta{
+  background:linear-gradient(120deg,#1b2735,#2c3e50 58%,#33506c);
+  border-radius:18px;padding:clamp(24px,4vw,44px);
+  color:#eef3f8;display:grid;grid-template-columns:minmax(0,1fr) auto;
+  gap:26px;align-items:center;
+  box-shadow:0 16px 40px rgba(27,39,53,.25);
+}
+.rj-cta h2{font-size:clamp(21px,2.6vw,27px);color:#fff}
+.rj-cta p{font-size:14px;color:#c3cfdd;margin-top:8px;max-width:60ch}
+.rj-cta-actions{display:flex;flex-wrap:wrap;gap:12px}
+
+/* 页脚 */
+.rj-footer{background:#151d27;color:#9fb0c2;padding:48px 0 0;font-size:13.5px}
+.rj-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;padding-bottom:34px}
+.rj-footer h4{font-size:14px;color:#e7eef6;margin-bottom:12px;letter-spacing:.5px}
+.rj-footer-brand p{font-size:13px;color:#8498ac;margin-top:10px;max-width:34ch}
+.rj-footer-logo{display:flex;align-items:center;gap:10px}
+.rj-footer-logo .rj-logo-mark{background:linear-gradient(140deg,#3f6180,#2c3e50)}
+.rj-footer-logo b{color:#e7eef6;font-size:17px;letter-spacing:.5px}
+.rj-footer ul{display:flex;flex-direction:column;gap:8px}
+.rj-footer ul a:hover{color:#e0a13a}
+.rj-footer-bottom{
+  border-top:1px solid #26303c;padding:18px 0;
+  display:flex;flex-wrap:wrap;gap:10px 22px;font-size:12.5px;color:#70849a;
+}
+.rj-footer-bottom span{margin-left:auto}
+
+/* 弹窗 & toast */
+.rj-modal-mask{
+  position:fixed;inset:0;background:rgba(20,28,38,.55);z-index:120;
+  display:none;align-items:center;justify-content:center;padding:20px;
+}
+.rj-modal-mask.is-open{display:flex}
+.rj-modal{
+  background:#fff;border-radius:16px;width:min(520px,100%);
+  padding:26px;box-shadow:0 24px 60px rgba(0,0,0,.3);
+  max-height:86vh;overflow:auto;
+}
+.rj-modal h3{font-size:19px;margin-bottom:10px;color:var(--rj-blue-deep)}
+.rj-modal p{font-size:13.8px;color:var(--rj-ink-soft);margin-bottom:14px}
+.rj-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}
+.rj-modal textarea{
+  width:100%;border:1px solid var(--rj-line);border-radius:10px;
+  padding:10px 12px;font-family:inherit;font-size:13.5px;resize:vertical;min-height:88px;
+  outline:none;
+}
+.rj-modal textarea:focus{border-color:var(--rj-teal)}
+.rj-modal-close{
+  border:0;background:#f1f4f8;border-radius:8px;padding:8px 16px;font-size:13.5px;color:var(--rj-ink-soft);
+}
+.rj-modal-primary{
+  border:0;background:var(--rj-blue);color:#fff;border-radius:8px;padding:8px 18px;font-size:13.5px;font-weight:600;
+}
+.rj-toast{
+  position:fixed;left:50%;bottom:32px;transform:translate(-50%,20px);
+  background:#1f2733;color:#fff;font-size:13.5px;padding:10px 20px;border-radius:30px;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);opacity:0;pointer-events:none;
+  transition:opacity .22s,transform .22s;z-index:200;max-width:calc(100% - 40px);
+}
+.rj-toast.is-show{opacity:1;transform:translate(-50%,0)}
+.rj-top-btn{
+  position:fixed;right:20px;bottom:24px;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--rj-line);background:#fff;color:var(--rj-blue);
+  display:none;place-items:center;box-shadow:var(--rj-shadow);z-index:90;
+}
+.rj-top-btn.is-show{display:grid}
+.rj-top-btn svg{width:18px;height:18px}
+
+/* 移动端 */
+@media(max-width:1000px){
+  .rj-hero-grid{grid-template-columns:1fr;gap:30px}
+  .rj-focus-grid,.rj-split{grid-template-columns:1fr}
+  .rj-topic-grid,.rj-board-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rj-footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:860px){
+  .rj-nav{
+    position:absolute;top:100%;left:0;right:0;
+    background:#fff;border-bottom:1px solid var(--rj-line);
+    flex-direction:column;align-items:stretch;gap:2px;
+    padding:10px 20px 16px;display:none;box-shadow:0 14px 24px rgba(31,39,51,.1);
+  }
+  .rj-nav.is-open{display:flex}
+  .rj-nav a{padding:11px 12px;border-radius:8px}
+  .rj-header-inner{position:relative;flex-wrap:wrap}
+  .rj-menu-btn{display:grid}
+  .rj-header-tools{margin-left:0;order:3;width:100%;padding-bottom:6px}
+  .rj-search{flex:1}
+  .rj-search input{width:100%}
+  .rj-hero{padding-top:30px}
+  .rj-cta{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .rj-shell{width:calc(100% - 28px)}
+  .rj-topic-grid,.rj-board-grid,.rj-author-grid,.rj-review-grid,.rj-partner-grid,.rj-footer-grid{grid-template-columns:1fr}
+  .rj-hero-stats{gap:18px}
+  .rj-vitem{grid-template-columns:1fr}
+  .rj-vstat{display:flex;gap:16px;text-align:left}
+  .rj-vstat b{display:inline;font-size:13px}
+  .rj-footer-bottom span{margin-left:0}
+  .rj-notice-inner{font-size:12.5px}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<div class="rj-sticky-wrap">
+  <div class="rj-notice" id="rjNotice">
+    <div class="rj-shell rj-notice-inner">
+      <span class="rj-notice-badge">官方发布</span>
+      <p class="rj-notice-text"><b>11月22日更新：</b>「人人久精品宗合」冬季精品片单上线，新增 36 部高清原创作品；「城市手艺人」专题第二季开放投票；创作者冬季挑战赛报名已开启。</p>
+      <button class="rj-notice-close" type="button" id="rjNoticeClose">收起</button>
+    </div>
+  </div>
+
+  <header class="rj-header">
+    <div class="rj-shell rj-header-inner">
+      <a class="rj-logo" href="#rjHero" aria-label="人人久精品宗合官方网站首页">
+        <span class="rj-logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z" fill="#f5b73d"/></svg>
+        </span>
+        <span class="rj-logo-text">
+          <span class="rj-logo-name">人人久精品宗合</span>
+          <span class="rj-logo-sub">视频品牌官网</span>
+        </span>
+      </a>
+
+      <nav class="rj-nav" id="rjNav" aria-label="主导航">
+        <a href="#rjFocus">精品内容</a>
+        <a href="#rjTopics">专题企划</a>
+        <a href="#rjExplain">关键词解析</a>
+        <a href="#rjAuthors">创作者</a>
+        <a href="#rjBoard">榜单</a>
+        <a href="#rjReviews">口碑</a>
+        <a href="#rjNews">企业动态</a>
+        <a href="#rjFaq">帮助</a>
+      </nav>
+
+      <div class="rj-header-tools">
+        <div class="rj-search">
+          <input type="search" id="rjSearchInput" placeholder="搜索精品内容、创作者" aria-label="站内搜索">
+          <button type="button" id="rjSearchBtn" aria-label="搜索">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          </button>
+          <div class="rj-search-tip" id="rjSearchTip" role="status"></div>
+        </div>
+      </div>
+
+      <button class="rj-menu-btn" type="button" id="rjMenuBtn" aria-label="展开导航菜单" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#2c3e50" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+</div>
+
+<main>
+
+  <section class="rj-hero" id="rjHero">
+    <div class="rj-shell rj-hero-grid">
+      <div class="rj-hero-copy">
+        <span class="rj-hero-kicker"><i></i>人人久精品宗合 · 官方网站</span>
+        <h1>人人久精品宗合：<em>精品视频</em>内容品牌与创作者社区</h1>
+        <p class="rj-hero-lead">作为深耕综合视频领域的品牌平台，人人久精品宗合以原创、正版、高清为底线，聚合纪录片、生活记录、访谈、手艺与城市影像，为创作者搭建可持续的内容生态。</p>
+        <div class="rj-hero-desc">
+          人人久精品宗合官网持续运营精品内容栏目与社区共创计划。我们相信，值得信赖的品质来自长期陪伴：从一条短片的选题，到一部系列作品的成形，企业、创作者与观众在同一个社区里共同成长。
+        </div>
+        <div class="rj-hero-actions">
+          <a class="rj-btn rj-btn-primary" href="#rjFocus">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l12 7-12 7z"/></svg>
+            观看精品内容
+          </a>
+          <a class="rj-btn rj-btn-gold" href="#rjSubmit" data-rj-open="submit">投稿报名</a>
+          <a class="rj-btn rj-btn-ghost" href="#rjAuthors">认识创作者</a>
+        </div>
+        <div class="rj-hero-stats">
+          <div class="rj-stat">
+            <div class="rj-stat-num">2,860<small>+</small></div>
+            <div class="rj-stat-label">精品视频内容</div>
+          </div>
+          <div class="rj-stat">
+            <div class="rj-stat-num">186<small>位</small></div>
+            <div class="rj-stat-label">签约与入驻创作者</div>
+          </div>
+          <div class="rj-stat">
+            <div class="rj-stat-num">4,200<small>万</small></div>
+            <div class="rj-stat-label">累计播放次数</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rj-hero-visual">
+        <span class="rj-hero-tag">本周主推 · 精品首映</span>
+        <div class="rj-hero-frame">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 680'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23213246'/%3E%3Cstop offset='0.55' stop-color='%233b5c76'/%3E%3Cstop offset='1' stop-color='%23c98c3c'/%3E%3C/linearGradient%3E%3ClinearGradient id='beam' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f5c069' stop-opacity='0.85'/%3E%3Cstop offset='1' stop-color='%23f5c069' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='680' fill='url(%23sky)'/%3E%3Cellipse cx='560' cy='600' rx='240' ry='90' fill='%23d9a45c' opacity='0.35'/%3E%3Ccircle cx='580' cy='250' r='86' fill='%23f7d79a' opacity='0.9'/%3E%3Cpath d='M0 470 L150 372 L300 452 L470 330 L620 420 L800 340 L800 680 L0 680 Z' fill='%23182534'/%3E%3Cpath d='M0 540 L190 460 L360 528 L540 440 L720 508 L800 470 L800 680 L0 680 Z' fill='%23111c28'/%3E%3Crect x='120' y='300' width='20' height='240' fill='%2316202c'/%3E%3Ccircle cx='130' cy='296' r='46' fill='url(%23beam)'/%3E%3Cpath d='M96 560 q34 -120 34 -120 q0 0 34 120 z' fill='%231b2b3a'/%3E%3Crect x='60' y='588' width='500' height='6' rx='3' fill='%23f0c07a' opacity='0.4'/%3E%3Cg opacity='0.55'%3E%3Ccircle cx='690' cy='120' r='3' fill='%23fff'/%3E%3Ccircle cx='740' cy='170' r='2' fill='%23fff'/%3E%3Ccircle cx='640' cy='90' r='2' fill='%23fff'/%3E%3Ccircle cx='710' cy='60' r='2.5' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E"
+               alt="人人久精品宗合本周主推的黄昏城市纪录短片画面，暖金色灯光与建筑剪影" width="800" height="680">
+          <div class="rj-hero-play">
+            <i><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></i>
+            <div>
+              <b>《暮色里的十二座城》第 1 集</b>
+              <span>城市影像 · 高清正版 · 24 分钟</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rj-section" id="rjFocus">
+    <div class="rj-shell">
+      <div class="rj-sec-head">
+        <div>
+          <span class="rj-eyebrow">CURATED · 精选</span>
+          <h2>精品内容入口：<span>本期焦点与热门视频</span></h2>
+          <p class="rj-sec-sub">人人久精品宗合以内容品质为筛选标准，每周更新焦点作品与热门条目。所有视频均为原创或正版授权，支持高清观看。</p>
+        </div>
+        <a class="rj-sec-more" href="#rjTopics">查看全部专题 →</a>
+      </div>
+
+      <div class="rj-focus-grid">
+        <article class="rj-card rj-focus-card">
+          <div class="rj-media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 405'%3E%3Crect width='720' height='405' fill='%23f3ece2'/%3E%3Crect x='0' y='268' width='720' height='137' fill='%23d8c3a5'/%3E%3Crect x='64' y='120' width='236' height='148' rx='6' fill='%23a8763f'/%3E%3Crect x='84' y='140' width='196' height='108' fill='%23f7efe2'/%3E%3Cpath d='M84 200 h196 M84 230 h120' stroke='%23a8763f' stroke-width='4' opacity='0.5'/%3E%3Ccircle cx='470' cy='178' r='58' fill='%23c98c3c' opacity='0.85'/%3E%3Cpath d='M430 320 q40 -92 80 0' fill='%238b5a2b'/%3E%3Ccircle cx='470' cy='248' r='24' fill='%238b5a2b'/%3E%3Crect x='540' y='150' width='120' height='150' rx='8' fill='%235f7d78'/%3E%3Cpath d='M560 300 v-70 h80 v70' fill='%23f3ece2' opacity='0.35'/%3E%3Cpath d='M0 372 q180 -34 360 0 q180 34 360 0 v33 H0 z' fill='%23c3a97f'/%3E%3C/svg%3E"
+                 alt="手艺人纪录片《一把刻刀的四十年》中木工坊窗边的工作台面与雕刻工具" width="720" height="405">
+            <span class="rj-media-label">本周焦点 · 人物纪实</span>
+          </div>
+          <div class="rj-focus-body">
+            <h3>《一把刻刀的四十年》：老木匠与他的第一百件作品</h3>
+            <p>镜头跟拍木作手艺人整整一个冬春，从选料到打磨，记录一段被时间慢慢雕刻的日常。片中没有旁白，只有刨花落地的声音和一句朴素的话——「慢一点，东西才留得住」。</p>
+            <div class="rj-meta">
+              <span class="rj-tag">人物访谈</span>
+              <span class="rj-tag rj-tag-gold">匠心</span>
+              <span>创作者：木下阿川</span>
+              <span>32:16</span>
+            </div>
+            <div class="rj-actions" data-rj-actions>
+              <button type="button" data-like aria-pressed="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9.4A4.1 4.1 0 0 1 12 7a4.1 4.1 0 0 1 7 3.6c0 5-7 9.4-7 9.4z"/></svg>
+                <span data-like-count>1,284</span>
+              </button>
+              <button type="button" data-save aria-pressed="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg>
+                收藏
+              </button>
+              <button type="button" data-rj-open="share">分享</button>
+              <button type="button" data-rj-open="comment">评论 96</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="rj-vlist" id="rjHotList">
+          <article class="rj-vitem">
+            <div>
+              <h3><a href="#rjFocus">《晚风里的三公里》：一条街的日常记录</a></h3>
+              <p>用 9 分钟走完一条老街，菜市场、修鞋铺、公交站，记录城市生活里被忽略的温柔。</p>
+              <div class="rj-vitem-meta"><span class="rj-tag">日常记录</span><span>创作者：南巷小满</span><span>播放 38.2 万</span></div>
+            </div>
+            <div class="rj-vstat"><b>3.1万</b>点赞<button class="rj-mini-btn" type="button" data-rj-open="comment">看评论</button></div>
+          </article>
+          <article class="rj-vitem">
+            <div>
+              <h3><a href="#rjFocus">三分钟学会手机拍出电影感夜景</a></h3>
+              <p>从测光到降噪，从构图到调色，一条完整的实用技巧教程，新手也能直接上手。</p>
+              <div class="rj-vitem-meta"><span class="rj-tag">实用技巧</span><span>创作者：光比研究所</span><span>播放 26.7 万</span></div>
+            </div>
+            <div class="rj-vstat"><b>2.4万</b>点赞<button class="rj-mini-btn" type="button" data-rj-open="comment">看评论</button></div>
+          </article>
+          <article class="rj-vitem">
+            <div>
+              <h3><a href="#rjFocus">在县城开一家影像工作室，第 300 天</a></h3>
+              <p>一位返乡青年的创业记录：设备清单、客户沟通、亏损与坚持，全部如实呈现。</p>
+              <div class="rj-vitem-meta"><span class="rj-tag">职场日常</span><span>创作者：阿岚的镜头</span><span>播放 19.4 万</span></div>
+            </div>
+            <div class="rj-vstat"><b>1.8万</b>点赞<button class="rj-mini-btn" type="button" data-rj-open="comment">看评论</button></div>
+          </article>
+          <article class="rj-vitem">
+            <div>
+              <h3><a href="#rjFocus">一只流浪猫如何在工作室住了下来</a></h3>
+              <p>拍摄团队与一只橘猫相遇的三十天，从投喂到收留，治愈影像系列的第三支短片。</p>
+              <div class="rj-vitem-meta"><span class="rj-tag">萌宠日常</span><span>创作者：暖光短片社</span><span>播放 15.9 万</span></div>
+            </div>
+            <div class="rj-vstat"><b>1.5万</b>点赞<button class="rj-mini-btn" type="button" data-rj-open="comment">看评论</button></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rj-section rj-section-alt" id="rjTopics">
+    <div class="rj-shell">
+      <div class="rj-sec-head">
+        <div>
+          <span class="rj-eyebrow">SERIES · 企划</span>
+          <h2>专题企划：<span>人人久精品宗合</span>的长期栏目</h2>
+          <p class="rj-sec-sub">专题是品牌平台的内容骨架。每个企划都由编辑团队策划、创作者执行，持续更新，形成可追溯的内容生态。</p>
+        </div>
+      </div>
+
+      <div class="rj-topic-grid">
+        <article class="rj-card rj-topic">
+          <div class="rj-topic-head">
+            <span class="rj-topic-ico">壹</span>
+            <div>
+              <h3>城市手艺人</h3>
+              <div class="rj-sub">人物访谈 · 已更新至第二季</div>
+            </div>
+          </div>
+          <p>走进木作、制陶、修表、裁缝的工作间，记录一门手艺如何在今天继续被需要。</p>
+          <span class="rj-status">更新中 · 每周三</span>
+          <ul class="rj-topic-list">
+            <li>《一把刻刀的四十年》木作篇</li>
+            <li>《修表铺的第七个抽屉》钟表篇</li>
+            <li>《裁缝阿婆的旧衣新做》衣物篇</li>
+          </ul>
+        </article>
+
+        <article class="rj-card rj-topic">
+          <div class="rj-topic-head">
+            <span class="rj-topic-ico">贰</span>
+            <div>
+              <h3>十二城纪事</h3>
+              <div class="rj-sub">城市探索 · 第一季完播</div>
+            </div>
+          </div>
+          <p>每集会选一座城市的一条街，从清晨到深夜，用镜头理解在地文化与人情秩序。</p>
+          <span class="rj-status rj-status-done">第一季已完成</span>
+          <ul class="rj-topic-list">
+            <li>《早市六点半》清晨篇</li>
+            <li>《河边的棋局》午后篇</li>
+            <li>《末班车之后》深夜篇</li>
+          </ul>
+        </article>
+
+        <article class="rj-card rj-topic">
+          <div class="rj-topic-head">
+            <span class="rj-topic-ico">叁</span>
+            <div>
+              <h3>镜头之后</h3>
+              <div class="rj-sub">创作幕后 · 每月双更</div>
+            </div>
+          </div>
+          <p>把拍摄现场的失误、取舍和设备清单摊开说清楚，是创作者对创作者最直接的帮助。</p>
+          <span class="rj-status">更新中 · 每月 8 日 / 22 日</span>
+          <ul class="rj-topic-list">
+            <li>《一条 9 分钟短片是怎么剪出来的》剪辑篇</li>
+            <li>《预算三千，怎么配一套入门灯》设备篇</li>
+            <li>《被删掉的 40 分钟》素材篇</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="rj-section" id="rjExplain">
+    <div class="rj-shell">
+      <div class="rj-explain">
+        <span class="rj-eyebrow">INSIGHT · 深度解析</span>
+        <h2>关于「人人久精品宗合」的内容解析</h2>
+        <p class="rj-explain-lead">一个视频品牌官网如何被理解、被检索、被长期信任？以下从品牌定位、内容结构与社区运营三个角度展开说明，帮助创作者与企业更完整地认识人人久精品宗合。</p>
+
+        <h3>一、从名字到定位：人人久精品宗合在做什么</h3>
+        <p>「人人久精品宗合」这个名字里，包含了这个视频品牌平台最核心的三层意思。<strong>人人</strong>指向参与主体：不只是专业摄制团队，也包括用手机记录生活的普通人；<strong>久</strong>指向时间维度：我们希望内容可以被反复观看，而不是在发布后几小时就消失；<strong>精品宗合</strong>指向品质标准与内容广度：以精品为底线，把纪录片、人物访谈、实用教程、城市影像、萌宠与手作等多种题材综合起来，形成可检索、可追溯的内容体系。</p>
+        <p>因此，人人久精品宗合官网并不是一个简单的视频播放列表，而是一个具备企业级运营结构的品牌平台。它由编辑团队负责选题策划与品质审核，由签约与入驻创作者负责一线拍摄与制作，由社区用户通过评论、点赞、收藏和投稿参与内容生态的循环。三者之间不是一次性的交易关系，而是持续运营的长期协作。</p>
+        <p>在内容标准上，平台坚持原创与正版授权并重，所有上架条目均标注来源与创作者信息，支持高清播放。对于涉及真实人物的访谈与纪录内容，编辑团队会在发布前完成素材核对与授权确认。这套流程看起来增加了成本，但正是这些细节构成了值得信赖的口碑基础。</p>
+
+        <h3>二、内容结构：精品内容如何被组织</h3>
+        <p>人人久精品宗合的内容结构分为三层。第一层是<strong>焦点内容</strong>，每周选出一到两部重点作品，放在官网首屏与焦点区，配以完整的创作者信息与观看入口；第二层是<strong>常规视频流</strong>，按题材标签组织，涵盖日常记录、经验分享、教程干货、深度测评、人物访谈、城市探索、在地文化、生活方式、兴趣同好、创作幕后、品牌故事等行业观察维度；第三层是<strong>专题企划</strong>，以系列化的方式长期更新，例如「城市手艺人」「十二城纪事」「镜头之后」，让观众可以按兴趣持续追更。</p>
+        <p>这样的分层带来两个直接好处。对观众而言，注意力有了明确的落点：想看深度内容可以进入专题，想找实用技巧可以检索教程标签，想看轻松内容可以浏览日常记录。对创作者而言，内容不再是零散的发布行为，而是可以沉淀为作品集的一部分，长期积累影响力与口碑。</p>
+        <table class="rj-explain-table">
+          <thead><tr><th>层级</th><th>内容形式</th><th>更新节奏</th><th>适合人群</th></tr></thead>
+          <tbody>
+            <tr><td>焦点</td><td>重点纪录与人物访谈</td><td>每周 1-2 部</td><td>深度内容观众</td></tr>
+            <tr><td>视频流</td><td>教程、测评、日常、访谈</td><td>每日更新</td><td>泛兴趣用户</td></tr>
+            <tr><td>专题</td><td>系列化企划栏目</td><td>每周或每月</td><td>长期追更观众</td></tr>
+          </tbody>
+        </table>
+        <p>在检索层面，每条视频都具备标题、摘要、标签、创作者与数据五项基础信息。标题强调具体细节，例如不写「木工记录」而写「一把刻刀的四十年」；摘要控制在两到三句，说明内容与拍摄方式；标签用于跨栏目聚合。这些看似基础的工作，决定了一个视频品牌官网能否真正被用户检索到、被搜索引擎识别出清晰的主题。</p>
+
+        <h3>三、创作者与社区：品牌如何持续生长</h3>
+        <p>人人久精品宗合对创作者的支持分为三个部分。其一是<strong>制作支持</strong>：官网提供选题建议、拍摄清单模板、剪辑思路参考，降低新人的起步门槛；其二是<strong>曝光机制</strong>：焦点内容、热度榜、新人榜与口碑榜并列展示，让不同阶段的创作者都有被看见的机会；其三是<strong>社区互动</strong>：评论、点赞、收藏与分享构成稳定的反馈回路，创作者能直接读到观众对某一段镜头、某一句旁白的真实反应。</p>
+        <p>社区的活力并不来自数量，而来自具体的交流。有人在教程下面补充自己的参数设置，有人在城市影像下面补充本地记忆，有人因为一条萌宠短片开始了自己的日常记录。平台的作用是把这些零散的、真实的交流组织起来，让内容生态具有成长性。这也是人人久精品宗合作为企业品牌所强调的社会责任：提供一块干净的、有品质标准的公共影像空间。</p>
+        <div class="rj-quote">「我们更在意一支片子在发布半年后还有人点开，而不是发布当天有多少转发。」——人人久精品宗合内容团队在年度创作分享会上的表述</div>
+        <p>从长期看，视频品牌的竞争力取决于三件事：内容标准是否稳定、创作者是否愿意留下、观众是否形成观看习惯。人人久精品宗合的答案是持续运营与品质优先：不追求单条爆款的短期效应，而是把每个栏目做完整，把每位创作者的作品集做厚，把每次社区互动做真。当这三件事同时成立，官网就不只是流量入口，而是品牌资产的承载地。</p>
+        <p>对希望合作的企业与创作者，人人久精品宗合提供专题共建、内容授权、联合企划与投稿报名等多种方式。所有合作内容都会标注合作方信息，保持信息透明。这也是我们对「正版」「专业」「值得信赖」这几个词的具体执行方式。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="rj-section rj-section-alt" id="rjAuthors">
+    <div class="rj-shell">
+      <div class="rj-sec-head">
+        <div>
+          <span class="rj-eyebrow">CREATORS · 创作者</span>
+          <h2>创作者矩阵：<span>人人久精品宗合</span>的内容伙伴</h2>
+          <p class="rj-sec-sub">他们是品牌的长期合作创作者，覆盖纪录、教程、城市、手作、萌宠等多个垂直领域。点击「查看档案」可了解擅长方向与代表作品。</p>
+        </div>
+      </div>
+
+      <div class="rj-author-grid">
+        <article class="rj-card rj-author">
+          <span class="rj-avatar rj-avatar-1">木</span>
+          <div class="rj-author-main">
+            <div class="rj-author-name">木下阿川 <small>签约创作者</small></div>
+            <div class="rj-author-fields">擅长：人物访谈 · 手作纪录 · 匠心题材</div>
+            <p>在工作室里拍了七年木作，习惯用长镜头等待一件作品完成。画面克制，声音优先保留现场。代表作品有《一把刻刀的四十年》《榫卯之间》。</p>
+            <div class="rj-author-foot"><span>作品 <b>48</b></span><span>粉丝 <b>12.6万</b></span><button class="rj-link-btn" type="button" data-rj-open="author" data-name="木下阿川">查看档案</button></div>
+          </div>
+        </article>
+
+        <article class="rj-card rj-author">
+          <span class="rj-avatar rj-avatar-2">南</span>
+          <div class="rj-author-main">
+            <div class="rj-author-name">南巷小满 <small>入驻创作者</small></div>
+            <div class="rj-author-fields">擅长：城市探索 · 日常记录 · 在地文化</div>
+            <p>走路很快，拍摄很慢。擅长用一条街的长度讲清一座城的性格，作品多为九分钟左右的短纪录，被观众称为「城市散步指南」。</p>
+            <div class="rj-author-foot"><span>作品 <b>62</b></span><span>粉丝 <b>18.3万</b></span><button class="rj-link-btn" type="button" data-rj-open="author" data-name="南巷小满">查看档案</button></div>
+          </div>
+        </article>
+
+        <article class="rj-card rj-author">
+          <span class="rj-avatar rj-avatar-3">光</span>
+          <div class="rj-author-main">
+            <div class="rj-author-name">光比研究所 <small>机构创作者</small></div>
+            <div class="rj-author-fields">擅长：教程干货 · 深度测评 · 器材解析</div>
+            <p>由三位摄影师组成的教程团队，专注把复杂的拍摄参数讲成人人能懂的话。每期都附完整参数表与练习作业，是新手入门的高频参考。</p>
+            <div class="rj-author-foot"><span>作品 <b>96</b></span><span>粉丝 <b>24.1万</b></span><button class="rj-link-btn" type="button" data-rj-open="author" data-name="光比研究所">查看档案</button></div>
+          </div>
+        </article>
+
+        <article class="rj-card rj-author">
+          <span class="rj-avatar rj-avatar-4">阿</span>
+          <div class="rj-author-main">
+            <div class="rj-author-name">阿岚的镜头 <small>入驻创作者</small></div>
+            <div class="rj-author-fields">擅长：品牌故事 · 职场日常 · 商业观察</div>
+            <p>返乡开影像工作室的第九百天，用镜头记录小城创业的真实账本：设备折旧、客户沟通、淡季焦虑，全部不美化，也因此获得大量同行的信任。</p>
+            <div class="rj-author-foot"><span>作品 <b>37</b></span><span>粉丝 <b>9.8万</b></span><button class="rj-link-btn" type="button" data-rj-open="author" data-name="阿岚的镜头">查看档案</button></div>
+          </div>
+        </article>
+
+        <article class="rj-card rj-author">
+          <span class="rj-avatar rj-avatar-5">暖</span>
+          <div class="rj-author-main">
+            <div class="rj-author-name">暖光短片社 <small>机构创作者</small></div>
+            <div class="rj-author-fields">擅长：治愈影像 · 萌宠日常 · 情感故事</div>
+            <p>一支常驻南方的小型摄制团队，擅长在自然光下拍小动物与人的相处。作品节奏舒缓，后期配乐多用现场环境声，强调真实与温暖。</p>
+            <div class="rj-author-foot"><span>作品 <b>54</b></span><span>粉丝 <b>15.2万</b></span><button class="rj-link-btn" type="button" data-rj-open="author" data-name="暖光短片社">查看档案</button></div>
+          </div>
+        </article>
+
+        <article class="rj-card rj-author">
+          <span class="rj-avatar rj-avatar-6">山</span>
+          <div class="rj-author-main">
+            <div class="rj-author-name">山野有闲 <small>入驻创作者</small></div>
+            <div class="rj-author-fields">擅长：户外活动 · 健康运动 · 旅行见闻</div>
+            <p>一年在户外超过两百天，拍山也拍人的体力与选择。视频里常给出路线、装备与风险提示，强调安全第一，户外内容专业、可信。</p>
+            <div class="rj-author-foot"><span>作品 <b>41</b></span><span>粉丝 <b>11.4万</b></span><button class="rj-link-btn" type="button" data-rj-open="author" data-name="山野有闲">查看档案</button></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="rj-section" id="rjBoard">
+    <div class="rj-shell">
+      <div class="rj-sec-head">
+        <div>
+          <span class="rj-eyebrow">RANKING · 榜单</span>
+          <h2>数据榜单：<span>人人久精品宗合</span>本周热度与口碑</h2>
+          <p class="rj-sec-sub">榜单每周一更新，综合播放、完播、收藏与评论质量计算。数据仅用于呈现内容生态的真实分布，不设付费排名。</p>
+        </div>
+        <a class="rj-sec-more" href="#rjReviews">查看用户口碑 →</a>
+      </div>
+
+      <div class="rj-board-grid">
+        <article class="rj-card rj-board">
+          <h3><span>热</span>热度榜</h3>
+          <ul class="rj-rank-list">
+            <li class="rj-rank"><span class="rj-rank-no">1</span><div class="rj-rank-main"><b>《一把刻刀的四十年》</b><span>人物访谈 · 木下阿川</span></div><span class="rj-rank-val">98.4</span></li>
+            <li class="rj-rank"><span class="rj-rank-no">2</span><div class="rj-rank-main"><b>《晚风里的三公里》</b><span>日常记录 · 南巷小满</span></div><span class="rj-rank-val">96.1</span></li>
+            <li class="rj-rank"><span class="rj-rank-no">3</span><div class="rj-rank-main"><b>手机拍夜景的三分钟教程</b><span>实用技巧 · 光比研究所</span></div><span class="rj-rank-val">93.7</span></li>
+            <li class="rj-rank"><span class="rj-rank-no">4</span><div class="rj-rank-main"><b>《县城工作室第 300 天》</b><span>职场日常 · 阿岚的镜头</span></div><span class="rj-rank-val">90.2</span></li>
+          </ul>
+        </article>
+
+        <article class="rj-card rj-board">
+          <h3><span>新</span>新人榜</h3>
+          <ul class="rj-rank-list">
+            <li class="rj-rank"><span class="rj-rank-no">1</span><div class="rj-rank-main"><b>《旧书店的最后一个夏天》</b><span>在地文化 · 拾页</span></div><span class="rj-rank-val">+38%</span></li>
+            <li class="rj-rank"><span class="rj-rank-no">2</span><div class="rj-rank-main"><b>《给外婆修一台收音机》</b><span>手作DIY · 小零件</span></div><span class="rj-rank-val">+31%</span></li>
+            <li class="rj-rank"><span class="rj-rank-no">3</span><div class="rj-rank-main"><b>《菜市场的六种声音》</b><span>城市探索 · 早班车</span></div><span class="rj-rank-val">+27%</span></li>
+            <li class="rj-rank"><span class="rj-rank-no">4</span><div class="rj-rank-main"><b>《一个人住的第十个月》</b><span>生活方式 · 白粥</span></div><span class="rj-rank-val">+22%</span></li>
+          </ul>
+        </article>
+
+        <article class="rj-card rj-board">
+          <h3><span>碑</span>口碑榜</h3>
+          <ul class="rj-rank-list">
+            <li class="rj-rank"><span class="rj-rank-no">1</span><div class="rj-rank-main"><b>《十二城纪事》第一季</b><span>专题企划 ·  Editorial</span></div><span class="rj-rank-val">9.6分</span></li>
+            <li class="rj-rank"><span class="rj-rank-no">2</span><div class="rj-rank-main"><b>《镜头之后》制作幕后</b><span>创作幕后 · 光比研究所</span></div><span class="rj-rank-val">9.4分</span></li>
+            <li class="rj-rank"><span class="rj-rank-no">3</span><div class="rj-rank-main"><b>《一只猫住进了工作室》</b><span>萌宠日常 · 暖光短片社</span></div><span class="rj-rank-val">9.3分</span></li>
+            <li class="rj-rank"><span class="rj-rank-no">4</span><div class="rj-rank-main"><b>《山脊线上的十二小时》</b><span>户外活动 · 山野有闲</span></div><span class="rj-rank-val">9.1分</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="rj-section rj-section-alt" id="rjReviews">
+    <div class="rj-shell">
+      <div class="rj-sec-head">
+        <div>
+          <span class="rj-eyebrow">VOICES · 口碑</span>
+          <h2>用户评价：<span>人人久精品宗合</span>的社区声音</h2>
+          <p class="rj-sec-sub">以下评论来自官网社区与创作分享会现场记录，保留原始语气与长度差异。</p>
+        </div>
+      </div>
+
+      <div class="rj-review-grid">
+        <article class="rj-card rj-review">
+          <div class="rj-review-top"><span class="rj-review-av">林</span><b>林同学</b><span>2026-11-18</span></div>
+          <div class="rj-stars">★★★★★</div>
+          <p>《一把刻刀的四十年》是我今年看过最安静的一部片子。没有配乐铺情绪，刨花的声音就足够。看完去搜了创作者的其他作品，发现都是这个调子，很难得。</p>
+        </article>
+
+        <article class="rj-card rj-review rj-review-quote">
+          <div class="rj-review-top"><span class="rj-review-av" style="background:#b4574f">周</span><b>周制片</b><span>2026-11-15</span></div>
+          <p>「我们更在意一支片子在发布半年后还有人点开」——这句放在官网首页的话，我是认同的。作为同行，能感受到这个平台的选题不是追热点，而是在做积累。</p>
+        </article>
+
+        <article class="rj-card rj-review">
+          <div class="rj-review-top"><span class="rj-review-av" style="background:#2f7f7a">陈</span><b>陈小满</b><span>2026-11-12</span></div>
+          <div class="rj-stars">★★★★☆</div>
+          <p>教程区的参数表很实用，照着练了两次，夜景确实干净了不少。唯一想提的是希望增加竖屏版本，通勤路上看横屏有点小。</p>
+        </article>
+
+        <article class="rj-card rj-review">
+          <div class="rj-review-top"><span class="rj-review-av" style="background:#8a6a9c">许</span><b>许工</b><span>2026-11-10</span></div>
+          <p>投稿流程比想象中顺畅，提交后第三天收到编辑的修改建议，逐条写了时间点和原因，不是模板回复。这种反馈对新人很重要。</p>
+        </article>
+
+        <article class="rj-card rj-review">
+          <div class="rj-review-top"><span class="rj-review-av" style="background:#4d7a52">赵</span><b>赵阿婆的邻居</b><span>2026-11-08</span></div>
+          <div class="rj-stars">★★★★★</div>
+          <p>在「城市手艺人」里看到了我们街道的裁缝铺，居然真的拍进去了。老人家不太会用手机，我把视频放给她看，她笑了很久。谢谢拍摄的年轻人。</p>
+        </article>
+
+        <article class="rj-card rj-review">
+          <div class="rj-review-top"><span class="rj-review-av" style="background:#e0a13a;color:#2b2415">吴</span><b>吴同学</b><span>2026-11-05</span></div>
+          <div class="rj-stars">★★★★☆</div>
+          <p>新人榜对我这种刚起步的创作者很友好，作品被推了一次，涨了两千粉。不过希望榜单能标注评选周期，方便对照自己的进步。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="rj-section" id="rjNews">
+    <div class="rj-shell">
+      <div class="rj-sec-head">
+        <div>
+          <span class="rj-eyebrow">UPDATES · 动态</span>
+          <h2>企业动态与合作伙伴：<span>品牌生态</span>的日常</h2>
+          <p class="rj-sec-sub">包含品牌资讯、内容更新日志与合作信息。所有官方发布均以本官网为准。</p>
+        </div>
+      </div>
+
+      <div class="rj-split">
+        <div>
+          <h3 style="font-size:17px;margin-bottom:14px;color:var(--rj-blue-deep)">近期企业动态</h3>
+          <div class="rj-member-timeline">
+            <article class="rj-news">
+              <time datetime="2026-11-22">11月22日</time>
+              <div>
+                <b>冬季精品片单上线，新增 36 部高清原创作品</b>
+                <p>涵盖人物访谈、城市探索、实用教程与萌宠日常四类，专题页已同步更新，支持按标签筛选。</p>
+              </div>
+            </article>
+            <article class="rj-news">
+              <time datetime="2026-11-18">11月18日</time>
+              <div>
+                <b>创作者冬季挑战赛开启报名</b>
+                <p>主题为「身边的长期主义」，征集 3-15 分钟纪录短片，报名截止 12 月 12 日，入选作品将获得官网焦点位推荐。</p>
+              </div>
+            </article>
+            <article class="rj-news">
+              <time datetime="2026-11-10">11月10日</time>
+              <div>
+                <b>「城市手艺人」第二季开放观众投票</b>
+                <p>本季共 12 位手艺人出镜，投票结果将影响第三季选题方向，投票入口位于专题页顶部。</p>
+              </div>
+            </article>
+            <article class="rj-news">
+              <time datetime="2026-10-30">10月30日</time>
+              <div>
+                <b>官网播放器完成升级</b>
+                <p>优化高清码率切换与断点续播，移动端首帧加载时间平均缩短 0.8 秒，观看体验更稳定。</p>
+              </div>
+            </article>
+          </div>
+
+          <h3 style="font-size:17px;margin:32px 0 14px;color:var(--rj-blue-deep)">内容合作与品牌伙伴</h3>
+          <div class="rj-partner-grid">
+            <div class="rj-partner"><b>拾光影像器材</b><span>设备支持伙伴</span></div>
+            <div class="rj-partner"><b>青禾文化空间</b><span>线下载体伙伴</span></div>
+            <div class="rj-partner"><b>慢屿书店</b><span>在地文化伙伴</span></div>
+            <div class="rj-partner"><b>白露咖啡</b><span>社区活动伙伴</span></div>
+          </div>
+        </div>
+
+        <div id="rjFaq">
+          <h3 style="font-size:17px;margin-bottom:14px;color:var(--rj-blue-deep)">常见问题</h3>
+          <div class="rj-faq">
+            <details open>
+              <summary>人人久精品宗合是做什么的平台？</summary>
+              <p>人人久精品宗合是一个综合视频品牌平台与内容社区，提供原创纪录、人物访谈、实用教程、城市影像等精品内容，并为创作者提供展示与合作入口。官网是品牌信息与内容的官方发布渠道。</p>
+            </details>
+            <details>
+              <summary>如何投稿或参与挑战赛？</summary>
+              <p>点击页面中的「投稿报名」按钮填写简要信息，编辑团队会在三个工作日内通过站内消息回复。挑战赛需在报名截止日前提交作品预览链接与创作说明。</p>
+            </details>
+            <details>
+              <summary>视频可以下载或转载吗？</summary>
+              <p>平台内容均为原创或正版授权。个人学习用途可在保留来源信息的前提下分享链接；商业用途或二次剪辑需通过联系表单提交授权申请，审核通过后发放书面许可。</p>
+            </details>
+            <details>
+              <summary>成为入驻创作者需要什么条件？</summary>
+              <p>需要至少三部完整的原创视频作品，内容方向明确，并同意平台的内容规范与版权声明。机构创作者需补充主体信息。审核重点是内容品质而非粉丝数量。</p>
+            </details>
+            <details>
+              <summary>为什么有些视频标注了「合作内容」？</summary>
+              <p>涉及品牌共建或联合企划的条目会明确标注合作方，以保证信息透明。标注不影响内容审核标准，所有合作内容同样经过品质与授权核对。</p>
+            </details>
+            <details>
+              <summary>榜单是如何计算的？</summary>
+              <p>综合播放量、完播率、收藏与评论质量四项指标加权计算，每周一更新。不设付费排名，异常数据会被剔除。</p>
+            </details>
+          </div>
+
+          <h3 style="font-size:17px;margin:30px 0 14px;color:var(--rj-blue-deep)">内容更新日志</h3>
+          <div class="rj-member-timeline">
+            <article class="rj-news">
+              <time>11月21日</time>
+              <div><b>新增 8 条教程类视频</b><p>覆盖手机运镜、现场收音与基础调色，均已加入「镜头之后」专题。</p></div>
+            </article>
+            <article class="rj-news">
+              <time>11月19日</time>
+              <div><b>优化了搜索的标签联想</b><p>输入关键词后可显示相关题材与创作者，减少重复检索。</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rj-section" id="rjSubmit">
+    <div class="rj-shell">
+      <div class="rj-cta">
+        <div>
+          <h2>把你的故事，交给一个认真的视频品牌</h2>
+          <p>人人久精品宗合长期开放投稿与专题共建。无论是纪录一位手艺人的日常，还是记录一座城的清晨，我们愿意提供选题建议、制作清单与发布支持。品牌与企业合作同样欢迎，官方发布均在本官网同步。</p>
+        </div>
+        <div class="rj-cta-actions">
+          <button class="rj-btn rj-btn-gold" type="button" data-rj-open="submit">立即投稿报名</button>
+          <button class="rj-btn rj-btn-ghost" type="button" data-rj-open="share">分享本页</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rj-footer">
+  <div class="rj-shell">
+    <div class="rj-footer-grid">
+      <div class="rj-footer-brand">
+        <div class="rj-footer-logo">
+          <span class="rj-logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z" fill="#f5b73d"/></svg>
+          </span>
+          <b>人人久精品宗合</b>
+        </div>
+        <p>人人久精品宗合官方网站。深耕综合视频领域，坚持原创、正版与高清标准，持续运营精品内容与创作者社区。</p>
+      </div>
+      <div>
+        <h4>内容栏目</h4>
+        <ul>
+          <li><a href="#rjFocus">精品内容</a></li>
+          <li><a href="#rjTopics">专题企划</a></li>
+          <li><a href="#rjBoard">数据榜单</a></li>
+          <li><a href="#rjReviews">用户口碑</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <ul>
+          <li><a href="#rjExplain">关键词解析</a></li>
+          <li><a href="#rjAuthors">创作者矩阵</a></li>
+          <li><a href="#rjNews">企业动态</a></li>
+          <li><a href="#rjFaq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与共创</h4>
+        <ul>
+          <li><a href="#rjSubmit">投稿报名</a></li>
+          <li><a href="#rjSubmit">企业合作</a></li>
+          <li><a href="#rjFaq">版权说明</a></li>
+          <li><a href="#rjHero">回到首页</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rj-footer-bottom">
+      <span>© 2026 人人久精品宗合 版权所有</span>
+      <span>官方网站 · 持续运营中</span>
+      <span>内容备案：影像内容运营备案 2026-0821</span>
+      <span>品质内容 · 值得信赖</span>
+    </div>
+  </div>
+</footer>
+
+<div class="rj-modal-mask" id="rjModalMask" role="dialog" aria-modal="true" aria-labelledby="rjModalTitle">
+  <div class="rj-modal">
+    <h3 id="rjModalTitle">提示</h3>
+    <p id="rjModalDesc"></p>
+    <textarea id="rjModalText" placeholder="写下你的想法…" hidden></textarea>
+    <div class="rj-modal-actions">
+      <button class="rj-modal-close" type="button" id="rjModalCancel">关闭</button>
+      <button class="rj-modal-primary" type="button" id="rjModalOk">确定</button>
+    </div>
+  </div>
+</div>
+
+<div class="rj-toast" id="rjToast" role="status" aria-live="polite"></div>
+
+<button class="rj-top-btn" id="rjTopBtn" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+  var toastEl = document.getElementById('rjToast');
+  var toastTimer = null;
+  function toast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-show');
+    if(toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-show'); }, 2200);
+  }
+
+  /* 公告条收起 */
+  var notice = document.getElementById('rjNotice');
+  var noticeClose = document.getElementById('rjNoticeClose');
+  if(noticeClose && notice){
+    noticeClose.addEventListener('click', function(){
+      notice.style.display = 'none';
+    });
+  }
+
+  /* 移动端导航 */
+  var menuBtn = document.getElementById('rjMenuBtn');
+  var nav = document.getElementById('rjNav');
+  if(menuBtn && nav){
+    menuBtn.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('is-open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById('rjSearchInput');
+  var searchBtn = document.getElementById('rjSearchBtn');
+  var searchTip = document.getElementById('rjSearchTip');
+  var hotKeywords = ['城市手艺人','镜头之后','手机拍夜景','县城工作室','萌宠日常','十二城纪事','木作','户外路线'];
+  function doSearch(){
+    var q = (searchInput.value || '').trim();
+    if(!q){
+      searchTip.textContent = '试试搜索：' + hotKeywords.slice(0,4).join(' / ');
+      searchTip.classList.add('is-open');
+      return;
+    }
+    var hit = hotKeywords.filter(function(k){ return k.indexOf(q) > -1 || q.indexOf(k) > -1; });
+    if(hit.length){
+      searchTip.textContent = '找到 ' + hit.length + ' 个相关方向：' + hit.join('、') + '。已为你高亮相关栏目入口。';
+      searchTip.classList.add('is-open');
+      var target = document.getElementById('rjFocus');
+      if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    }else{
+      searchTip.textContent = '暂未匹配到「' + q + '」。可尝试「教程」「城市」「访谈」「萌宠」等关键词。';
+      searchTip.classList.add('is-open');
+    }
+  }
+  if(searchBtn) searchBtn.addEventListener('click', doSearch);
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+    searchInput.addEventListener('input', function(){
+      if(!searchInput.value.trim()) searchTip.classList.remove('is-open');
+    });
+  }
+  document.addEventListener('click', function(e){
+    if(searchTip && searchTip.classList.contains('is-open')){
+      var wrap = searchInput ? searchInput.closest('.rj-search') : null;
+      if(wrap && !wrap.contains(e.target)) searchTip.classList.remove('is-open');
+    }
+  });
+
+  /* 点赞 / 收藏 */
+  document.querySelectorAll('[data-rj-actions]').forEach(function(group){
+    var likeBtn = group.querySelector('[data-like]');
+    var likeCount = group.querySelector('[data-like-count]');
+    var saveBtn = group.querySelector('[data-save]');
+    if(likeBtn && likeCount){
+      likeBtn.addEventListener('click', function(){
+        var liked = likeBtn.classList.toggle('is-liked');
+        likeBtn.setAttribute('aria-pressed', liked ? 'true' : 'false');
+        var n = parseInt(likeCount.textContent.replace(/[^\d]/g,''),10) || 0;
+        n += liked ? 1 : -1;
+        likeCount.textContent = n.toLocaleString('en-US');
+        toast(liked ? '已点赞，感谢支持' : '已取消点赞');
+      });
+    }
+    if(saveBtn){
+      saveBtn.addEventListener('click', function(){
+        var saved = saveBtn.classList.toggle('is-saved');
+        saveBtn.setAttribute('aria-pressed', saved ? 'true' : 'false');
+        saveBtn.innerHTML = saved
+          ? '<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg>已收藏'
+          : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg>收藏';
+        toast(saved ? '已收藏到个人片单' : '已取消收藏');
+      });
+    }
+  });
+
+  /* 弹窗 */
+  var mask = document.getElementById('rjModalMask');
+  var modalTitle = document.getElementById('rjModalTitle');
+  var modalDesc = document.getElementById('rjModalDesc');
+  var modalText = document.getElementById('rjModalText');
+  var modalOk = document.getElementById('rjModalOk');
+  var modalCancel = document.getElementById('rjModalCancel');
+  var currentModalType = '';
+
+  var modalConfig = {
+    submit: {
+      title: '投稿报名',
+      desc: '请简要说明你的作品主题、时长与创作方向，编辑团队会在三个工作日内回复。也可直接发送作品预览链接至官方投稿邮箱。',
+      textarea: true,
+      ok: '提交报名'
+    },
+    share: {
+      title: '分享人人久精品宗合',
+      desc: '可通过微信、微博、QQ 等渠道分享本页，或复制页面链接发送给朋友。分享时请保留品牌与创作者信息。',
+      textarea: false,
+      ok: '复制链接'
+    },
+    comment: {
+      title: '参与评论',
+      desc: '写下你对这条内容的看法。优质评论会被编辑精选展示在口碑区。',
+      textarea: true,
+      ok: '发布评论'
+    },
+    author: {
+      title: '创作者档案',
+      desc: '',
+      textarea: false,
+      ok: '知道了'
+    }
+  };
+
+  function openModal(type, extra){
+    var cfg = modalConfig[type];
+    if(!cfg || !mask) return;
+    currentModalType = type;
+    modalTitle.textContent = cfg.title;
+    if(type === 'author'){
+      modalDesc.textContent = '「' + (extra || '该创作者') + '」为平台长期合作创作者，擅长领域与代表作品已在创作者矩阵中展示。如需合作，请通过投稿报名入口提交需求，编辑团队会协助对接。';
+    }else{
+      modalDesc.textContent = cfg.desc;
+    }
+    if(modalText){
+      modalText.hidden = !cfg.textarea;
+      modalText.value = '';
+    }
+    modalOk.textContent = cfg.ok;
+    mask.classList.add('is-open');
+    if(cfg.textarea && modalText) setTimeout(function(){ modalText.focus(); }, 60);
+  }
+  function closeModal(){
+    if(mask) mask.classList.remove('is-open');
+    currentModalType = '';
+  }
+  document.addEventListener('click', function(e){
+    var trigger = e.target.closest('[data-rj-open]');
+    if(trigger){
+      e.preventDefault();
+      var type = trigger.getAttribute('data-rj-open');
+      openModal(type, trigger.getAttribute('data-name'));
+    }
+  });
+  if(modalCancel) modalCancel.addEventListener('click', closeModal);
+  if(mask){
+    mask.addEventListener('click', function(e){
+      if(e.target === mask) closeModal();
+    });
+  }
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && mask && mask.classList.contains('is-open')) closeModal();
+  });
+  if(modalOk){
+    modalOk.addEventListener('click', function(){
+      if(currentModalType === 'share'){
+        var link = '人人久精品宗合官方网站 · 精品视频内容与创作者社区';
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(link).then(function(){
+            toast('链接信息已复制，可粘贴分享');
+          }).catch(function(){
+            toast('请手动复制地址栏链接进行分享');
+          });
+        }else{
+          toast('请手动复制地址栏链接进行分享');
+        }
+        closeModal();
+        return;
+      }
+      if(currentModalType === 'submit' || currentModalType === 'comment'){
+        var val = modalText ? modalText.value.trim() : '';
+        if(!val){
+          toast('请先填写内容再提交');
+          return;
+        }
+        toast(currentModalType === 'submit' ? '投稿信息已提交，编辑团队将尽快联系你' : '评论已提交，感谢你的参与');
+        closeModal();
+        return;
+      }
+      closeModal();
+    });
+  }
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('rjTopBtn');
+  if(topBtn){
+    window.addEventListener('scroll', function(){
+      if(window.scrollY > 500) topBtn.classList.add('is-show');
+      else topBtn.classList.remove('is-show');
+    }, {passive:true});
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+})();
+</script>
+</body>
+          </html>
